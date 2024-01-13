@@ -41,6 +41,7 @@ class Library:
         for ind, book in enumerate(self.books):
             if book.id_ == id_search:
                 return ind
+        raise ValueError("Книги с запрашиваемым id не существует")
 
 
 if __name__ == '__main__':
